@@ -2,13 +2,19 @@
     //alert("hello")
     var input = prompt("Enter a phrase");
     var inputArray = input.split(" ");
-
-    alert(inputArray[0]);
+   
+    var output = "";
 
     for (var i = 0; i < inputArray.length; i++) {
         var innerArray = inputArray[i].split("");
-        innerArray[0].toUpperCase();
-        alert(innerArray[0].toUpperCase);
+        var word = innerArray[0].toUpperCase();
+      
+        for (var ii = 1; ii < innerArray.length; ii++) {
+              //alert(innerArray[ii]);
+              word += innerArray[ii];
+        }
+        output += word + " ";
     }
+    alert(output);
 
 });
