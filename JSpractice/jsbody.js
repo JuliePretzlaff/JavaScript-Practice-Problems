@@ -41,3 +41,28 @@ $("#exp").click(function () {
     answer = Math.pow(num, ex);
     alert("The answer is " + answer);
 });
+
+
+//problem 4: countries.  accept a list of countries and find the longest name
+$("#countries").click(function () {
+
+    var userArray = new Array();
+    var length = 0;
+    var longest = "";
+    var userResponse = confirm('Would you like us to tell you which country has the longest name?');
+    while (userResponse) {
+        var country = prompt('Please enter the name of a country');
+        userArray.push(country);
+        userResponse = confirm('Would you like to add another country?');
+    }
+
+    for (var i = 0; i < userArray.length; i++) {
+        newLength = userArray[i].length;
+        if (newLength > length) {
+            length = newLength;
+            longest = userArray[i];
+        }
+    }
+
+    alert("The longest country name is " + longest);
+});
