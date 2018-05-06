@@ -32,3 +32,12 @@ $("#vowels").click(function () {
     }
     alert(count);
 });
+
+
+//problem 3: exponents
+$("#exp").click(function () {
+    var num = prompt("Enter a base number.")
+    var ex = prompt("Enter a power.")
+    answer = Math.pow(num, ex);
+    alert("The answer is " + answer);
+});
