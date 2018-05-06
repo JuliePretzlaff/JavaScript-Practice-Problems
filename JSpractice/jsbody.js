@@ -66,3 +66,20 @@ $("#countries").click(function () {
 
     alert("The longest country name is " + longest);
 });
+
+
+//fizz buzz
+$("#fizzbuzz").click(function () {
+
+    var num = prompt("Please enter a number.")
+    if (num % 15 === 0) {
+        alert("fizbuzz");
+    }
+    else if (num % 3 === 0) {
+        alert("fizz");
+    }
+    else if (num % 5 === 0) {
+        alert("buzz");
+    }
+
+});
