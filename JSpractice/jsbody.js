@@ -19,6 +19,7 @@ $("#caps").click(function () {
 
 });
 
+
 //problem 2: count vowels
 $("#vowels").click(function () {
     var string = prompt("Enter a phrase.").toLowerCase();
