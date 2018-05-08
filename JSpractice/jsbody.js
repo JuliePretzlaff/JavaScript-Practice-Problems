@@ -83,4 +83,24 @@ $("#fizzbuzz").click(function () {
         alert("buzz");
     }
 
+
 });
+
+//problem 5: concatinate an array to a string
+$("#array").click(function () {
+    var userArray = new Array();
+    var string = "";
+    var userResponse = confirm('Would you like to enter a color?');
+    while (userResponse) {
+        var country = prompt('Please enter a color');
+        userArray.push(country);
+        userResponse = confirm('Would you like to add another color?');
+    }
+
+    for (var i = 0; i < userArray.length; i++) {
+        string += userArray[i] + ", "
+    }
+
+    alert(string);
+});
+
