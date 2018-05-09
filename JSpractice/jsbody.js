@@ -104,3 +104,23 @@ $("#array").click(function () {
     alert(string);
 });
 
+
+//problem 6: find largest number
+$("#largeNum").click(function () {
+var userArray = new Array();
+
+var userResponse = confirm('Would you like to enter a number?');
+while (userResponse) {
+    var country = prompt('Please enter a number');
+    userArray.push(country);
+    userResponse = confirm('Would you like to add another number?');
+}
+var largest = userArray[0];
+for (var i = 0; i < userArray.length; i++) {
+    if (userArray[i] > largest) {
+        largest = userArray[i];
+    }
+}
+
+alert("The largest number is " + largest);
+});
