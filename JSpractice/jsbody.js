@@ -124,3 +124,16 @@ for (var i = 0; i < userArray.length; i++) {
 
 alert("The largest number is " + largest);
 });
+
+//problem 7: iterated thru 0-15 and print if it's odd or even
+$("#oddEven").click(function () {
+    for (var i = 0; i < 16; i++) {
+        if (i % 2 === 0) {
+            alert(i + " is even");
+        }
+        else {
+            alert(i + " is odd");
+        }
+    }
+
+});
