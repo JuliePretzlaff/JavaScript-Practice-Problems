@@ -107,22 +107,22 @@ $("#array").click(function () {
 
 //problem 6: find largest number
 $("#largeNum").click(function () {
-var userArray = new Array();
+    var userArray = new Array();
 
-var userResponse = confirm('Would you like to enter a number?');
-while (userResponse) {
-    var country = prompt('Please enter a number');
-    userArray.push(country);
-    userResponse = confirm('Would you like to add another number?');
-}
-var largest = userArray[0];
-for (var i = 0; i < userArray.length; i++) {
-    if (userArray[i] > largest) {
-        largest = userArray[i];
+    var userResponse = confirm('Would you like to enter a number?');
+    while (userResponse) {
+        var country = prompt('Please enter a number');
+        userArray.push(country);
+        userResponse = confirm('Would you like to add another number?');
     }
-}
+    var largest = userArray[0];
+    for (var i = 0; i < userArray.length; i++) {
+        if (userArray[i] > largest) {
+            largest = userArray[i];
+        }
+    }
 
-alert("The largest number is " + largest);
+    alert("The largest number is " + largest);
 });
 
 //problem 7: iterated thru 0-15 and print if it's odd or even
@@ -133,6 +133,18 @@ $("#oddEven").click(function () {
         }
         else {
             alert(i + " is odd");
+        }
+    }
+
+});
+
+//problem 8: star triangle using nested loop:
+$("#stars").click(function () {
+    var star = "";
+    for (var i = 0; i < 6; i++) {
+        for (var k = 0; k < i; k++) {
+            star += "*";
+            console.log(star);
         }
     }
 
