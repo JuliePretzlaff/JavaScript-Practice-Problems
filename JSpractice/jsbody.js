@@ -149,3 +149,14 @@ $("#stars").click(function () {
     }
 
 });
+
+//problem 9: sum mults of 3 & 5 under 1000
+$("#sum").click(function () {
+    var sum = 0;
+    for (var i = 0; i <= 1000; i++) {
+        if (i % 15 === 0) {
+            sum += i;
+        }
+    }
+    alert(sum + " is the total.")
+});
